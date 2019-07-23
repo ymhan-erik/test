@@ -11,13 +11,13 @@ conda activate py27_env
 conda deactivate
 
 # Setup Yocto R & VIVA2018.3
-xEnv 2018.3
-conda activate py27_env
-export xYOCTO_LOC=$HOME/xYocto
-export xYOCTO_VER=rocko
-export xVIVA_VER=v2018.3
-export xPRJ_NAME=JKI_jts250f
-export xPRJ_LOC=$HOME/iWork/$xPRJ_NAME
+xEnv 2018.3 
+conda activate py27_env 
+export xYOCTO_LOC=$HOME/xYocto   
+export xYOCTO_VER=rocko 
+export xVIVA_VER=v2018.3   
+export xPRJ_NAME=JKI_jts250f  
+export xPRJ_LOC=$HOME/iWork/$xPRJ_NAME 
 
 # Building the PetaLinux Image
 ## Set CMA size to be larger, for SDS-alloc buffers:
