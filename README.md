@@ -21,17 +21,16 @@ export xPRJ_LOC=$HOME/iWork/$xPRJ_NAME
    
 
 
-# Building the PetaLinux Image
-## Set CMA size to be larger, for SDS-alloc buffers:
-for Zynq UltraScale+ MPSoC: Device Drivers -> Generic Driver -> Size in Mega Bytes(1024)
-for Zynq-7000 SoC: Device Drivers→ Generic Driver option → Size in Mega Bytes(256)
-Enable staging drivers
-Device Drivers → Staging drivers (ON)
-Enable APF management drive
-Device Drivers → Staging drivers → Xilinx APF Accelerator driver (ON)
-Enable APF DMA drive
-Device Drivers → Staging drivers → Xilinx APF Accelerator driver → Xilinx APF DMA
-engines support (ON)
+# Building the PetaLinux Image 
+Set CMA size to be larger, for SDS-alloc buffers.
+• for Zynq UltraScale+ MPSoC: Device Drivers -> Generic Driver -> Size in Mega Bytes(1024)     
+• for Zynq-7000 SoC: Device Drivers→ Generic Driver option → Size in Mega Bytes(256     
+• Enable staging drivers  
+-Device Drivers → Staging drivers (ON)     
+• Enable APF management drive  
+-Device Drivers → Staging drivers → Xilinx APF Accelerator driver (ON)      
+• Enable APF DMA drive  
+-Device Drivers → Staging drivers → Xilinx APF Accelerator driver → Xilinx APF DMA engines support (ON)      
 
 Note:
 For Zynq UltraScale+ MPSoC, you must turn o@ CPU idle and frequency scaling. To do so, mark the
